@@ -78,6 +78,7 @@ public class FaceController {
 
             map.put("faceInfoDTO", faceInfoDTO);
             dataResponse = JsonUtl.assembleDataResponse("SUCCESS", "交互成功", map);
+
         } catch (FaceException e) {
             String code = e.getErrorCode();
             String message = e.getErrorMsg();
@@ -127,6 +128,7 @@ public class FaceController {
 
             map.put("faceInfoDTO", faceInfoDTO);
             dataResponse = JsonUtl.assembleDataResponse("SUCCESS", "交互成功", map);
+
         } catch (FaceException e) {
             String code = e.getErrorCode();
             String message = e.getErrorMsg();
@@ -230,6 +232,7 @@ public class FaceController {
 
             map.put("score", FaceTool.detectFaceScore(image, maxFaceNum));
             dataResponse = JsonUtl.assembleDataResponse("SUCCESS", "交互成功", map);
+
         } catch (FaceException e) {
             String code = e.getErrorCode();
             String message = e.getErrorMsg();
